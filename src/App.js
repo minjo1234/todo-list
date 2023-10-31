@@ -47,7 +47,7 @@ function App() {
         )
       })
     }
-    <input onChange={getText}></input>
+    <input onChange={getText} value={inputText}></input>
     <button onClick={()=>{plusTitle(inputText)}}>글 작성</button>
     {
       visibleModal == true ? <Modal title={title} titleNum={titleNum} formattedDate={formattedDate}/> : ''
